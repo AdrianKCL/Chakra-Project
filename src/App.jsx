@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import theme from "./theme";
 import { Box } from "@chakra-ui/react";
 import background from "../assets/background.jpg";
-import Flowers from "../pages/Flowers";
+import Facts from "../pages/Facts";
 import "./index.css";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/flowers" element={<Flowers />} />
+          <Route path="/facts" element={<Facts />} />
         </Routes>
       </Router>
       ;

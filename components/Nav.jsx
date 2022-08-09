@@ -1,7 +1,7 @@
 import React from "react";
-import { Flex, Image, List, ListItem } from "@chakra-ui/react";
+import { Flex, Image, List, ListItem, Button, Link } from "@chakra-ui/react";
 import logo from "../assets/Creative.png";
-import { Link } from "@chakra-ui/react";
+
 import { Link as ReactLink } from "react-router-dom";
 
 export default function Nav() {
@@ -21,30 +21,66 @@ export default function Nav() {
           <List color="white" display="flex" fontSize="20px">
             <ListItem>
               <Link as={ReactLink} to="/">
-                Home
+                <Button
+                  size="lg"
+                  variant="outline"
+                  color="white"
+                  mt="5"
+                  _hover={{ bg: "white", color: "black" }}
+                  transition="all 0.3s "
+                >
+                  Home
+                </Button>
               </Link>
             </ListItem>
 
-            <ListItem>
-              <Link as={ReactLink} to="/flowers">
-                Check flowers
+            <ListItem pl="16px">
+              <Link as={ReactLink} to="/facts">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  color="white"
+                  mt="5"
+                  _hover={{ bg: "white", color: "black" }}
+                  transition="all 0.3s "
+                >
+                  Check facts
+                </Button>
               </Link>
             </ListItem>
 
-            <ListItem>
+            <ListItem pl="16px">
               <Link
                 href="https://www.linkedin.com/in/adrian-kiedrowicz/"
                 isExternal
               >
-                <i className="fa-brands fa-linkedin"></i> Linkedin
+                <Button
+                  size="lg"
+                  variant="outline"
+                  color="white"
+                  mt="5"
+                  _hover={{ bg: "white", color: "black" }}
+                  transition="all 0.3s "
+                >
+                  <i className="fa-brands fa-linkedin"></i>&nbsp;Linkedin
+                </Button>
               </Link>
             </ListItem>
-            <ListItem>
+            <ListItem pl="16px">
               <Link
                 href="https://github.com/AdrianKCL/Chakra-Project"
                 isExternal
               >
-                <i className="fa-brands fa-github"></i> Source
+                <Button
+                  size="lg"
+                  variant="outline"
+                  color="white"
+                  mt="5"
+                  _hover={{ bg: "white", color: "black" }}
+                  transition="all 0.3s "
+                >
+                  <i className="fa-brands fa-github"></i> &nbsp;Source
+                </Button>
               </Link>
             </ListItem>
           </List>
