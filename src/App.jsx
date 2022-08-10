@@ -3,13 +3,12 @@ import { ColorModeScript } from "@chakra-ui/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import theme from "./theme";
 import { Box } from "@chakra-ui/react";
-import background from "../assets/background.jpg";
 import Facts from "../pages/Facts";
 import "./index.css";
 
 function App() {
   return (
-    <Box backgroundImage={background} backgroundPosition="center" h="100vh">
+    <Box h="100vh" overflow="hidden">
       <Router>
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
         <Routes>
