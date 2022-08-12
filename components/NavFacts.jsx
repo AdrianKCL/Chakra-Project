@@ -1,12 +1,17 @@
 import React from "react";
 import { Flex, Image, List, ListItem, Button, Link } from "@chakra-ui/react";
-import logo from "../assets/Creative.png";
+import logo from "../assets/CreativeBlack.png";
 
 import { Link as ReactLink } from "react-router-dom";
 
 export default function NavFacts() {
   return (
-    <Flex borderBottom="1px" borderColor="white" alignItems="center">
+    <Flex
+      borderBottom="1px"
+      borderColor="white"
+      alignItems="center"
+      background="#FED7D7"
+    >
       <Flex
         h={100}
         w="100%"
@@ -18,13 +23,18 @@ export default function NavFacts() {
       >
         <Image src={logo} h="75px"></Image>
         <Flex>
-          <List color="gray-800" display="flex" fontSize="20px">
+          <List
+            color="gray-800"
+            display="flex"
+            fontSize="20px"
+            alignItems="center"
+          >
             <ListItem>
               <Link as={ReactLink} to="/">
                 <Button
                   size="lg"
                   variant="outline"
-                  mt="5"
+                  borderColor="gray-800"
                   _hover={{ bg: "white", color: "black" }}
                   transition="all 0.3s "
                 >
@@ -38,7 +48,7 @@ export default function NavFacts() {
                 <Button
                   size="lg"
                   variant="outline"
-                  mt="5"
+                  borderColor="gray-800"
                   _hover={{ bg: "white", color: "black" }}
                   transition="all 0.3s "
                 >
@@ -55,7 +65,7 @@ export default function NavFacts() {
                 <Button
                   size="lg"
                   variant="outline"
-                  mt="5"
+                  borderColor="gray-800"
                   _hover={{ bg: "white", color: "black" }}
                   transition="all 0.3s "
                 >
@@ -71,7 +81,7 @@ export default function NavFacts() {
                 <Button
                   size="lg"
                   variant="outline"
-                  mt="5"
+                  borderColor="gray-800"
                   _hover={{ bg: "white", color: "black" }}
                   transition="all 0.3s "
                 >

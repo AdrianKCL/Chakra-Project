@@ -25,7 +25,6 @@ export default function Nav() {
                   size="lg"
                   variant="outline"
                   color="white"
-                  mt="5"
                   _hover={{ bg: "white", color: "black" }}
                   transition="all 0.3s "
                 >
@@ -40,7 +39,6 @@ export default function Nav() {
                   size="lg"
                   variant="outline"
                   color="white"
-                  mt="5"
                   _hover={{ bg: "white", color: "black" }}
                   transition="all 0.3s "
                 >
@@ -58,7 +56,6 @@ export default function Nav() {
                   size="lg"
                   variant="outline"
                   color="white"
-                  mt="5"
                   _hover={{ bg: "white", color: "black" }}
                   transition="all 0.3s "
                 >
@@ -75,7 +72,6 @@ export default function Nav() {
                   size="lg"
                   variant="outline"
                   color="white"
-                  mt="5"
                   _hover={{ bg: "white", color: "black" }}
                   transition="all 0.3s "
                 >
