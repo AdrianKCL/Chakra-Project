@@ -7,7 +7,7 @@ import { useColorModeValue } from "@chakra-ui/react";
 export default function Facts() {
   const bg = useColorModeValue("#f0e7db", "gray-800");
   return (
-    <Box height="100vh" background={bg} transition="300ms all ease">
+    <Box background={bg} transition="300ms all ease">
       <NavFacts />
       <LandingFacts />
     </Box>
