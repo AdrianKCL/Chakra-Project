@@ -1,11 +1,27 @@
 import React from "react";
-import { Box, Text, Flex, Button, Link } from "@chakra-ui/react";
+import { Text, Flex, Button, Link } from "@chakra-ui/react";
 import { Link as ReactLink } from "react-router-dom";
 
 export default function Landing() {
   return (
-    <Flex w="100%" justifyContent="center">
-      <Flex left="5%" top="30%" position="absolute" textAlign="center">
+    <Flex
+      sx={{
+        "@media screen and (max-width: 1024px)": {
+          justifyContent: "center",
+        },
+      }}
+    >
+      <Flex
+        left="5%"
+        top="30%"
+        position="absolute"
+        textAlign="center"
+        sx={{
+          "@media screen and (max-width: 1024px)": {
+            display: " none",
+          },
+        }}
+      >
         <Text as="cite" color="white" fontSize="2xl" maxW="300px">
           "In a marshland amongst the crocodiles, there float beautiful water
           lilies! Even in the Hell, one can find the good and the beauty."
@@ -17,6 +33,14 @@ export default function Landing() {
         flexDirection="column"
         alignItems="center"
         top="25%"
+        sx={{
+          "@media screen and (max-width: 1024px)": {
+            position: "relative",
+
+            right: 0,
+            top: 0,
+          },
+        }}
       >
         <Text color="white" fontSize="8xl" letterSpacing="8px">
           Creative

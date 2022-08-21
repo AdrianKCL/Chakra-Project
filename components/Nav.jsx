@@ -15,11 +15,22 @@ export default function Nav() {
         m="0 auto"
         justifyContent="space-between"
         alignItems="center"
+        sx={{
+          "@media screen and (max-width: 1024px)": {
+            padding: "0 8px",
+          },
+        }}
       >
         <Image src={logo} h="75px"></Image>
         <Flex>
           <List color="white" display="flex" fontSize="20px">
-            <ListItem>
+            <ListItem
+              sx={{
+                "@media screen and (max-width: 1024px)": {
+                  display: "none",
+                },
+              }}
+            >
               <Link as={ReactLink} to="/">
                 <Button
                   size="lg"
@@ -47,7 +58,14 @@ export default function Nav() {
               </Link>
             </ListItem>
 
-            <ListItem pl="16px">
+            <ListItem
+              pl="16px"
+              sx={{
+                "@media screen and (max-width: 1024px)": {
+                  display: "none",
+                },
+              }}
+            >
               <Link
                 href="https://www.linkedin.com/in/adrian-kiedrowicz/"
                 isExternal
@@ -63,7 +81,14 @@ export default function Nav() {
                 </Button>
               </Link>
             </ListItem>
-            <ListItem pl="16px">
+            <ListItem
+              pl="16px"
+              sx={{
+                "@media screen and (max-width: 1024px)": {
+                  display: "none",
+                },
+              }}
+            >
               <Link
                 href="https://github.com/AdrianKCL/Chakra-Project"
                 isExternal

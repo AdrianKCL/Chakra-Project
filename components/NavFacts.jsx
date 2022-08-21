@@ -1,25 +1,18 @@
 import React from "react";
-import {
-  Flex,
-  Image,
-  List,
-  ListItem,
-  Button,
-  Link,
-  color,
-} from "@chakra-ui/react";
+import { Flex, Image, List, ListItem, Button, Link } from "@chakra-ui/react";
 import logoblack from "../assets/CreativeBlack.png";
 import logowhite from "../assets/Creative.png";
+
 import { Link as ReactLink } from "react-router-dom";
 import { useColorMode, useColorModeValue } from "@chakra-ui/react";
 import { SunIcon, MoonIcon } from "@chakra-ui/icons";
-import { motion } from "framer-motion";
 
 export default function NavFacts() {
   const { colorMode, toggleColorMode } = useColorMode();
   const bg = useColorModeValue("#f7f3ed", "gray-800");
   const logo = useColorModeValue(logoblack, logowhite);
   const hover = useColorModeValue("purple.700", "orange.300");
+
   return (
     <Flex alignItems="center" background={bg}>
       <Flex
@@ -30,6 +23,11 @@ export default function NavFacts() {
         m="0 auto"
         justifyContent="space-between"
         alignItems="center"
+        sx={{
+          "@media screen and (max-width: 1024px)": {
+            padding: "0 8px",
+          },
+        }}
       >
         <Image src={logo} h="75px"></Image>
         <Flex>
@@ -53,7 +51,14 @@ export default function NavFacts() {
               </Link>
             </ListItem>
 
-            <ListItem pl="16px">
+            <ListItem
+              pl="16px"
+              sx={{
+                "@media screen and (max-width: 1024px)": {
+                  display: "none",
+                },
+              }}
+            >
               <Link as={ReactLink} to="/facts">
                 <Button
                   size="lg"
@@ -67,7 +72,14 @@ export default function NavFacts() {
               </Link>
             </ListItem>
 
-            <ListItem pl="16px">
+            <ListItem
+              pl="16px"
+              sx={{
+                "@media screen and (max-width: 1024px)": {
+                  display: "none",
+                },
+              }}
+            >
               <Link
                 href="https://www.linkedin.com/in/adrian-kiedrowicz/"
                 isExternal
@@ -83,7 +95,14 @@ export default function NavFacts() {
                 </Button>
               </Link>
             </ListItem>
-            <ListItem pl="16px">
+            <ListItem
+              pl="16px"
+              sx={{
+                "@media screen and (max-width: 1024px)": {
+                  display: "none",
+                },
+              }}
+            >
               <Link
                 href="https://github.com/AdrianKCL/Chakra-Project"
                 isExternal
